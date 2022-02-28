@@ -17,11 +17,8 @@ if [[ "$url" =~ $regexp_url ]]; then
     echo "adding git remote 'website'..."
     git remote add website "git@github.com:$username/$url.git"
 
-    echo "creating  'dev' branch..."
+    echo "create and checkout  'dev' branch..."
     git checkout -b dev
-
-    echo "checkout 'dev' branch..."
-    git checkout dev
 
 else 
     echo "Invalid url";
