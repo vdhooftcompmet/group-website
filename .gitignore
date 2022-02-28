@@ -6,6 +6,7 @@
 /pages/people
 
 # production
+/.next
 /out
 
 # dependencies
