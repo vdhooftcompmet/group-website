@@ -1,0 +1,28 @@
+.news-card {
+    transition: all .3s;
+    box-shadow: 0 0  11px rgba(33, 33, 33, 0.2);
+    border-radius: 5px;
+    min-width: 100%;
+    max-width: 100%;
+
+    .news-card-content {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    };
+    
+    .content-news {
+        padding-left: 10px;
+    };
+    
+    .news-item-row-date {
+        font-weight: bold;
+    }
+    
+    .news-item-row-text {};
+};
+
+.news-card:hover {
+    transform: translate(-0.2rem, -0.2rem);
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    cursor: pointer;
+};

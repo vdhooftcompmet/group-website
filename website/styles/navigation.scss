@@ -1,0 +1,18 @@
+@import "_variables.scss";
+
+.navbar {
+    background-color: $light;
+    margin-right: $margin-perc;
+    margin-left: $margin-perc;
+    max-width: $content-perc;
+
+    .logo {
+        width: 70%;
+    };
+    .menu-button {
+        padding-top: 1.5rem;
+        padding-right: 0.5rem;
+        background-color: transparent;
+        border: none;
+    };
+};

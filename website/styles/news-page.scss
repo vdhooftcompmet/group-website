@@ -1,0 +1,22 @@
+.message-card {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    border-radius: 5px; 
+
+    .message {
+        margin: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        .title {
+            margin-top: 40px;
+            font-size: 20px;
+            padding-bottom: 5px;
+        };
+
+        .date {
+            font-weight: bold;
+        };
+
+        .description {};
+    };
+};

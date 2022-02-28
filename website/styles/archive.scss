@@ -1,0 +1,20 @@
+.archive-card {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    border-radius: 5px; 
+
+    .archive {
+        margin: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        .archive-item {
+            width: 100%;
+
+            .date {
+                column-width: 90px;
+            };
+
+            .title {};
+        };
+    };
+};

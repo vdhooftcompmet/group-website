@@ -6,21 +6,22 @@
   "author": {
     "name": "Van der Hooft Computational Metabolomics Group",
     "url": "https://vdhooftcompmet.github.io/"
-},
+  },
   "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "list-react-files": "^0.2.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "bootstrap": "^5.0.2",
     "gray-matter": "^4.0.2",
-    "next": "11.0.1"
+    "list-react-files": "^0.2.0",
+    "next": "11.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0"
   },
   "scripts": {
-    "prebuild": "node scripts/index-news.js && node scripts/parse-news.js && node scripts/parse-people.js && node scripts/parse-collabs.js",
+    "prebuild": "node scripts/index-news.js && node scripts/parse-news.js && node scripts/parse-people.js",
     "build": "next build",
     "dev": "next dev",
     "export": "next export",

@@ -1,0 +1,76 @@
+@import "_variables.scss";
+@import "_bootstrap.scss";
+@import "navigation.scss";
+@import "about.scss";
+@import "people.scss";
+@import "news.scss";
+@import "footer.scss";
+@import "archive.scss";
+@import "news-page.scss";
+@import "people-page.scss";
+
+// Main styling
+html { scroll-behavior: smooth; };
+
+body {
+    margin: 0;
+    -webskit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $primary
+};
+
+a { text-decoration: none; };
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+};
+
+.content {
+    background-color: $light;
+    position: relative;
+    margin: 0 auto;
+    min-height: 0.95rem;
+    max-height: 0.95rem;
+    max-width: $max-width-website;
+    padding-bottom: 2.5rem;
+
+    .content-container {
+        padding-top: 15px;
+        margin-right: $margin-perc;
+        margin-left: $margin-perc;
+        max-width: $content-perc;
+    };
+
+    .content-border {
+        min-height: 3px;
+        max-height: 3px;
+        border-radius: 1.5px;
+        margin-right: $margin-perc;
+        margin-left: $margin-perc;
+        max-width: $content-perc;
+        background-color: $primary;
+        margin-top: 20px;
+    };
+};
+// };
+
+// Fort Awesome icon styling
+.fa-bars { color: $primary; };
+.fa-bars:active { color: $primary; };
+.fa-bars:hover { color: $tertiary; };
+
+.fa-question-circle:active { color: $primary; };
+.fa-question-circle:hover { color: $tertiary; };
+
+.fa-user:active { color: $primary; };
+.fa-user:hover { color: $tertiary; };
+
+.fa-twitter:active { color: $primary; };
+.fa-twitter:hover { color: $tertiary; };
+
+.fa-twitter:active { color: $primary; };
+.fa-linkedin:hover { color: $tertiary; };
+
+.fa-github:active { color: $primary; };
+.fa-github:hover { color: $tertiary; };

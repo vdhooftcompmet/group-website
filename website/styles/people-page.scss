@@ -1,0 +1,35 @@
+.people-card {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    border-radius: 5px; 
+
+    .people {
+        margin: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        .profile {        
+            .img-fluid {
+                max-width: 170px;
+                background-color: lightgrey;
+                object-fit: cover;
+                border-radius: 50%;
+            };
+        };
+
+        .name {
+            margin-top: 40px;
+            font-size: 20px;
+            padding-bottom: 5px;
+        };
+
+        .role {
+            font-weight: bold;
+        };
+
+        .affiliation {
+            font-weight: bold;
+        };
+
+        .description {};
+    };
+};

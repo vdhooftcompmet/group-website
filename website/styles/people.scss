@@ -1,0 +1,90 @@
+.person-card {
+    transition: all .3s;
+    box-shadow: 0 0  11px rgba(33, 33, 33, 0.2);
+    border-radius: 5px;
+    min-width: 200px;
+    max-width: 100%;
+
+    .profile {
+        float: left;
+        max-width: 70px;
+        margin-top: 25px;
+        margin-left: 20px;
+
+        img-fluid {
+            max-width: 50px;
+            background-color: lightgrey;
+            object-fit: cover;
+            border-radius: 50%;
+        };
+    };
+
+    .info {
+        float: left;
+        margin: 10px;
+        margin-right: 20px;
+
+        .name {
+            font-weight: bold;
+            text-align: left;
+        };
+
+        .role {
+            text-align: left;
+        };
+
+        .contact {
+            text-align: left;
+            max-height: 25px;
+            margin-right: 20px;
+
+            .contact-icon {
+                max-width: 3px;
+            };
+        };
+    };
+};
+
+.person-card:hover {
+    transform: translate(-0.2rem, -0.2rem);
+    box-shadow: 0 0  11px rgba(33, 33, 33, 0.2);
+    cursor: pointer;
+};
+
+.person {
+    margin: 5px;
+
+    .profile {
+        max-width: 70px;
+        margin-left: 5.5px;
+        margin-top: 12px;
+
+        img-fluid {
+            max-width: 50px;
+            background-color: lightgrey;
+            object-fit: cover;
+            border-radius: 50%;
+        };
+    };
+
+    .info {
+        .name {
+            font-weight: bold;
+            text-align: left;
+        };
+
+        .role {
+            text-align: left;
+        };
+
+        .contact {
+            text-align: left;
+            max-height: 25px;
+            margin-right: 20px;
+
+            .contact-icon {
+                max-width: 3px;
+            };
+        };
+    };
+};

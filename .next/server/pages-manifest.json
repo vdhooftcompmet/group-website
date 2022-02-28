@@ -1,0 +1,10 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js",
+  "/news/20220101_template": "pages/news/20220101_template.js",
+  "/people/Some_Group_Member": "pages/people/Some_Group_Member.js",
+  "/archive": "pages/archive.js",
+  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js"
+}
