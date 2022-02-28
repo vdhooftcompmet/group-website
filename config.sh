@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p "GitHub Pages url: " url
+read -p "GitHub Pages repository name: " url
 
 regexp_url='^[A-Za-z_-]+\.github\.io$'
 if [[ "$url" =~ $regexp_url ]]; then 
