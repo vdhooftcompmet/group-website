@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const gray_matter = require('gray-matter');
 
-const peopleFolder = 'custom/people'
-let peopleDir = './pages/people/'
+const peopleFolder = 'custom/people';
+let peopleDir = './pages/people/';
 
 function setPeopleDir (peopleDir) {
     if (!fs.existsSync(peopleDir)){
@@ -82,7 +82,7 @@ function parseMarkdown (peopleItemPaths) {
         const htmlString = (
 `import React from 'react';
 import Link from 'next/link';
-import { Footer } from '../../website/components/Footer';
+import { Footer } from '../../src/components/Footer';
 import { footer } from '../../custom/footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle, faQuestionCircle, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
@@ -126,7 +126,7 @@ export default function Item${path.id}() {
 }
 
 // Set output folder for news items.
-setPeopleDir(peopleDir)
+setPeopleDir(peopleDir);
 
 // Read all Markdown news items file names.
 var paths = getFiles(peopleFolder);

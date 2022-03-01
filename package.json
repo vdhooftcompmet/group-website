@@ -1,0 +1,34 @@
+{
+  "name": "vdhooftcompmet-group-website",
+  "version": "0.1.0",
+  "website": "https://vdhooftcompmet.github.io/",
+  "private": true,
+  "author": {
+    "name": "Van der Hooft Computational Metabolomics Group",
+    "url": "https://vdhooftcompmet.github.io/"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "bootstrap": "^5.0.2",
+    "gray-matter": "^4.0.2",
+    "list-react-files": "^0.2.0",
+    "next": "11.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0"
+  },
+  "scripts": {
+    "prebuild": "node website/scripts/index-news.js && node website/scripts/parse-news.js && node website/scripts/parse-people.js",
+    "build": "next build",
+    "dev": "next dev",
+    "export": "next export",
+    "deploy": "npm run build && npm run export && touch ./out/.nojekyll && gh-pages -b main -d out"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "sass": "^1.37.5"
+  }
+}

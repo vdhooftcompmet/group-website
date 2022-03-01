@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Footer } from "../website/components/Footer";
+import { Footer } from "../src/components/Footer";
 import { footer } from "../custom/footer";
 import entries from '../custom/news.json';
 

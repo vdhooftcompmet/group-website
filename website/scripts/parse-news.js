@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const gray_matter = require('gray-matter');
 
-const newsFolder = 'custom/news'
-let newsDir = './pages/news/'
+const newsFolder = 'custom/news';
+let newsDir = './pages/news/';
 
 function setNewsDir (newsDir) {
     if (!fs.existsSync(newsDir)){
@@ -49,7 +49,7 @@ function parseMarkdown (newsItemPaths) {
         const htmlString = (
 `import React from 'react';
 import Link from 'next/link';
-import { Footer } from '../../website/components/Footer';
+import { Footer } from '../../src/components/Footer';
 import { footer } from '../../custom/footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle, faQuestionCircle, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';

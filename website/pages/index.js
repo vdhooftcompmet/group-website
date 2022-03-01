@@ -1,14 +1,14 @@
 import React from "react";
-import { Header } from "../website/components/Header";
+import { Header } from "../src/components/Header";
 import { SEO } from "../custom/header";
-import { Navigation } from "../website/components/Navigation";
+import { Navigation } from "../src/components/Navigation";
 import { navigation } from "../custom/navigation";
-import { About } from "../website/components/About";
+import { About } from "../src/components/About";
 import { about } from "../custom/about";
-import { News } from "../website/components/News";
-import { People, Alumni } from "../website/components/People";
+import { News } from "../src/components/News";
+import { People, Alumni } from "../src/components/People";
 import { people } from "../custom/people";
-import { Footer } from "../website/components/Footer";
+import { Footer } from "../src/components/Footer";
 import { footer } from "../custom/footer";
 
 export default function Home() {
