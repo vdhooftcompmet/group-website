@@ -26,9 +26,7 @@ case $1 in
         if ! npm run deploy ; then 
             echo "ERROR: 'npm run deploy' failed"
             exit 1
-        fi;
-
-        echo "deployment written to './out/' folder";;
+        fi;;
 
     "run") 
         echo "Target: run";
