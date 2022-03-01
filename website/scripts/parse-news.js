@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const gray_matter = require('gray-matter');
 
-const newsFolder = 'custom/news';
-let newsDir = './pages/news/';
+const newsFolder = 'website/custom/news';
+let newsDir = 'website/pages/news/';
 
 function setNewsDir (newsDir) {
     if (!fs.existsSync(newsDir)){
@@ -88,7 +88,7 @@ export default function Item${path.id}() {
     );
 }`
         )
-        fs.writeFile("pages/news/" + path.id + ".js", htmlString, 'utf8', function (err) {
+        fs.writeFile("website/pages/news/" + path.id + ".js", htmlString, 'utf8', function (err) {
             if (err) {
                 return console.log(err);
             }

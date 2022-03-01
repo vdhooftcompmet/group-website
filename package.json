@@ -22,10 +22,10 @@
   },
   "scripts": {
     "prebuild": "node website/scripts/index-news.js && node website/scripts/parse-news.js && node website/scripts/parse-people.js",
-    "build": "next build",
-    "dev": "next dev",
-    "export": "next export",
-    "deploy": "npm run build && npm run export && touch ./out/.nojekyll && gh-pages -b main -d out"
+    "build": "cd website && next build",
+    "dev": "cd website && next dev",
+    "export": "cd website && next export",
+    "deploy": "npm run build && npm run export && touch website/out/.nojekyll && gh-pages -b main -d website/out -t true"
   },
   "devDependencies": {
     "gh-pages": "^3.2.3",

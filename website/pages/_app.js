@@ -1,4 +1,4 @@
-import '../website/styles/main.scss';
+import '../src/styles/main.scss';
 
 function Website({ Component, pageProps }) {
     return <Component {...pageProps}/>

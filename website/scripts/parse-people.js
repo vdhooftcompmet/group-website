@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const gray_matter = require('gray-matter');
 
-const peopleFolder = 'custom/people';
-let peopleDir = './pages/people/';
+const peopleFolder = 'website/custom/people';
+let peopleDir = 'website/pages/people/';
 
 function setPeopleDir (peopleDir) {
     if (!fs.existsSync(peopleDir)){
@@ -117,7 +117,7 @@ export default function Item${path.id}() {
     );
 }`
         )
-        fs.writeFile("pages/people/" + path.id.replace(/_description/, '') + ".js", htmlString, 'utf8', function (err) {
+        fs.writeFile("website/pages/people/" + path.id.replace(/_description/, '') + ".js", htmlString, 'utf8', function (err) {
             if (err) {
                 return console.log(err);
             }

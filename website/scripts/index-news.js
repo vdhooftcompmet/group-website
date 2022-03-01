@@ -1,7 +1,7 @@
 const fs = require('fs');
 const gray_matter = require('gray-matter');
 
-const newsFolder = 'custom/news'
+const newsFolder = 'website/custom/news'
 
 function getFiles (dir, files_) {
     files_ = files_ || [];
@@ -56,7 +56,7 @@ newsItems.sort(function (a, b) {
 // Parse out to file in config.
 const jsonContent = JSON.stringify(newsItems);
 
-fs.writeFile("custom/news.json", jsonContent, 'utf8', function (err) {
+fs.writeFile("website/custom/news.json", jsonContent, 'utf8', function (err) {
     if (err) {
         return console.log(err);
     }

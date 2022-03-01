@@ -8,17 +8,19 @@ if [[ "$url" =~ $regexp_url ]]; then
     username=${array[0]}
     echo "Valid url '$url' for '$username'"
 
-    echo "configuring 'package.json' with GitHub Pages repository..."
+    echo "Configuring 'package.json' with GitHub Pages repository..."
     filename="package.json"
     full_url="https:\/\/"$url"\/"
     regexp_json='("website"\: )"https\:\/\/[A-Za-z_-]+\.github\.io\/"'
     sed -E -i "" "s/$regexp_json/\1\"$full_url\"/" package.json
 
-    echo "changing git remote 'origin' to direct to GitHub Pages repository..."
-    git remote add website "git@github.com:$username/$url.git"
+    echo "Renaming remote 'origin' to 'dev'..."
+    git remote rename origin dev
+    
+    echo "Adding new origin directed at $url..."
+    git remote add origin "git@github.com:$username/$url.git"
 
-    echo "create and checkout  'dev' branch..."
-    git checkout -b dev
+    echo "Done"
 
 else 
     echo "Invalid url";
