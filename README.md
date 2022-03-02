@@ -1,12 +1,14 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
-We as the Van der Hooft Computational Metabolomics Group wanted to have a free, accessible, and easy to maintain website on which we could share our team, mission statement, and research. To this end, we have created [a GitHub Pages website](https://vdhooftcompmet.github.io/). Now we would like to share a template of our website with you. Go through the following sections to have a minimal group website set up in under 30 minutes.
+We as the Van der Hooft Computational Metabolomics Group wanted to have a free, accessible, and easy to maintain website on which we could share our team, mission statement, and research. To this end, we have created [a GitHub Pages website](https://vdhooftcompmet.github.io/). Now we would like to share a template of our website with you. Go through the following sections set up your own group website.
 
 ---
 
 ## Prerequisites
 - You will need to be able to [connect to GitHub through SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
-- `Node.js NPM (>=14.0)` (Optional: install inside a custom environment).
+- `npm (>=6.14.15)` 
+- `Node.js (>=14.17.6)` 
+- Optional: install npm and Node.js inside a custom environment. 
 
 ---
 
@@ -18,7 +20,7 @@ We as the Van der Hooft Computational Metabolomics Group wanted to have a free, 
 
 2. **Create a separate [GitHub Pages](https://pages.github.com/) repository**
 
-    We chose to set up this template with a remote GitHub Pages repository. This means you will have your fork (or implemented template) repository that will contain the source code for your website, and you will have a second seperate `<account_name>.github.io` GitHub Pages repository that the static build of the website will be pushed to.
+    We chose to set up this template with a remote GitHub Pages repository. This means you will have your fork (or implemented template) repository that will contain the source code for your website, and you will have a second separate `<account_name>.github.io` GitHub Pages repository that the static build of the website will be pushed to.
 
 3. **Run `./config.sh`** 
 
@@ -38,7 +40,7 @@ If steps 1-3 were successful, you now have everything set up for developing your
 
 5. **Develop**
     
-    Making changes to the source code of the website will immediately trigger a recompile upon saving changes, which will make changes visible in the browser (if the recompile is succesful of course). However, not all changes will be immediately visible. Since GitHub Pages only serves static websites, some pages need to be created beforehand (e.g., personal pages and news items). To prevent having to code all of these pages manually, including changing every page individually if there is a style change, we created a few scripts (you can check them out in `website/scripts`) that do this for us. All we need to do is supply the information to create pages for and put them in the correct format in the right location: 
+    Making changes to the source code of the website will immediately trigger a recompile upon saving changes, which will make changes visible in the browser (if the recompile is succesful of course). However, not all changes will be immediately visible. Since GitHub Pages only serves static websites, some pages need to be created beforehand (e.g., personal pages and news items). To prevent having to code all of these pages manually, including changing every single page individually if there is a style change, we created a few scripts (you can check them out in `website/scripts`) that do this for you. All we need to do is supply the information to create pages for and put them in the correct format in the right location: 
 
     - **Adding a news item**
     
@@ -114,7 +116,7 @@ If steps 1-3 were successful, you now have everything set up for developing your
 
     After adding a new news item or a personal page, you should rerun `./build.sh run` in order to see the freshly parsed markdown files. Added people to the `website/custom/people.js` file will immediately show up on your website after a recompile.
 
-    Other items you can readily customize which also trigger a recompile:
+    Other items you can readily customize which will also trigger a recompile:
 
     - **Group logo**
     
@@ -126,13 +128,13 @@ If steps 1-3 were successful, you now have everything set up for developing your
 
     - **Customize colors**
 
-        The `website/custom/src/styles` contains all the styling sheets for the website. Main colours can be easily changes in the `website/custom/src/styles/_variables.scss` style sheet.
+        The `website/custom/src/styles` contains all the styling sheets for the website. Main colors can be easily changed in the `website/custom/src/styles/_variables.scss` style sheet.
 
     - **Advanced: adding more sections and customizing a section**
 
         Note: this paragraph assumes you are familiar with JavaScript, html, and css. 
 
-        Every section has a component file in the `website/custom/src/components` folder. To make the component show up on your website you will need to add it to the page configurations in `website/custom/src/pages` files. The homepage configuration is described in `website/custom/src/pages/index.js`. Styling of your component can be done by adding a component style sheet to the `website/custom/src/styles` folder. Import your component style sheet in `website/custom/src/styles/main.scss`. Existing components have this aforementioned setup and can be altered accordingly.
+        Every section has a component file in the `website/custom/src/components` folder. To make the component show up on your website you will need to add it to the page configurations in `website/custom/src/pages` files. The homepage configuration is described in `website/custom/src/pages/index.js`. Styling of your component can be done by adding a component style sheet to the `website/custom/src/styles` folder. Then, import your component style sheet in `website/custom/src/styles/main.scss`. Existing components have this aforementioned setup and can be altered accordingly.
 
 6. **Save your changes**
 
@@ -149,7 +151,7 @@ If steps 1-3 were successful, you now have everything set up for developing your
 
 7. **Run `./build.sh deploy`**
 
-    This command will trigger a deployment build. The static pages will be saved to `website/out`. The `website/out` folder is then pushed to your `<account_name>.github.io` (step 2) repository. After 5-10 minutes your website will be online at `https://<account_name>.github.io/`. 
+    This command will trigger a build for deployment. The static pages will be saved to `website/out`. The `website/out` folder is then pushed to your `<account_name>.github.io` (step 2) repository. After 5-10 minutes your website will be visible at `https://<account_name>.github.io/`. 
 
 ---
 
