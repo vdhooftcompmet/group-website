@@ -136,7 +136,7 @@ If steps 1-3 were successful, you now have everything set up for developing your
 
         Note: this paragraph assumes you are familiar with JavaScript, html, and css. 
 
-        Every section has a component file in the `website/custom/src/components` folder. To make the component show up on your website you will need to add it to the page configurations in `website/custom/src/pages` files. The homepage configuration is described in `website/custom/src/pages/index.js`. Styling of your component can be done by adding a component style sheet to the `website/custom/src/styles` folder. Then, import your component style sheet in `website/custom/src/styles/main.scss`. Existing components have this aforementioned setup and can be altered accordingly.
+        Every section has a component file in the `website/custom/src/components` folder. To make the component show up on your website you will need to add it to the page configurations in `website/custom/src/pages` files. The homepage configuration is described in `website/custom/src/pages/index.js`. Styling of your component can be done by adding a component style sheet to the `website/custom/src/styles` folder. Then, import your component style sheet in `website/custom/src/styles/main.scss`. Don't forget to add your component to the navigation menu in `website/custom/navigation.js` and add `id=<component_id>` to the div it should navigate to. Existing components have this aforementioned setup and can be altered accordingly.
 
 6. **Save your changes**
 
