@@ -1,6 +1,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
-We as the Van der Hooft Computational Metabolomics Group wanted to have a free, accessible, and easy to maintain website on which we could share our team, mission statement, and research. To this end, we have created [a GitHub Pages website](https://vdhooftcompmet.github.io/). Now we would like to share a template of our website with you. Go through the following sections set up your own group website.
+We as the Van der Hooft Computational Metabolomics Group wanted to have a free, accessible, and easy to maintain website on which we could share our team, mission statement, and research. To this end, we have created [a GitHub Pages website](https://vdhooftcompmet.github.io/). Now we would like to share a template of our website with you. Go through the following sections to set up your own group website. 
+
+We are curious about your feedback and don't forget to share your custom implementation with us!
 
 ---
 
