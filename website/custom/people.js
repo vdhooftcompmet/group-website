@@ -1,4 +1,3 @@
-import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 // This item is also used to list alumni ("active = false" denotes an alumnus)
