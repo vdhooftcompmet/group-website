@@ -50,13 +50,6 @@ function parseMarkdown (peopleItemPaths) {
         const path = peopleItemPaths[i]
         const fileContents = fs.readFileSync(path.path, 'utf8') 
         const { data, content } = gray_matter(fileContents)
-        
-        img_imports = []
-        if (data.imgs.length > 0) {
-            for (const img of data.imgs) {
-                img_imports.push(`import ${img.replace(/\.png$/, '')} from '../../config/imgs/${img}';`)
-            };
-        };
 
         var files = fs.readdirSync(peopleFolder);
         if (files.includes(path.profile_name)) {
@@ -87,7 +80,6 @@ import { footer } from '../../custom/footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle, faQuestionCircle, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 ${profile}
-${img_imports.join('\n')}
 export default function Item${path.id}() {
     return (
         <div className='content'>

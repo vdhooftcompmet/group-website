@@ -8,11 +8,11 @@ if [[ "$url" =~ $regexp_url ]]; then
     username=${array[0]}
     echo "Valid url '$url' for '$username'"
 
-    echo "Configuring 'package.json' with GitHub Pages repository..."
-    filename="package.json"
-    full_url="https:\/\/"$url"\/"
-    regexp_json='("website"\: )"https\:\/\/[A-Za-z_-]+\.github\.io\/"'
-    sed -E -i "" "s/$regexp_json/\1\"$full_url\"/" package.json
+    # echo "Configuring 'package.json' with GitHub Pages repository..."
+    # filename="package.json"
+    # full_url="https:\/\/"$url"\/"
+    # regexp_json='("website"\: )"https\:\/\/[A-Za-z_-]+\.github\.io\/"'
+    # sed -E -i.bak "" "s/$regexp_json/\1\"$full_url\"/" package.json
 
     echo "Renaming remote 'origin' to 'dev'..."
     git remote rename origin dev

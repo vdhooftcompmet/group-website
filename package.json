@@ -1,7 +1,6 @@
 {
   "name": "vdhooftcompmet-group-website",
   "version": "0.1.0",
-  "website": "https://vdhooftcompmet.github.io/",
   "private": true,
   "author": {
     "name": "Van der Hooft Computational Metabolomics Group",

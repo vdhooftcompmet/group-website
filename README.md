@@ -7,12 +7,15 @@ We are curious about your feedback and don't forget to share your custom impleme
 ---
 
 ## Prerequisites
+- macOS or Linux
 - You will need to be able to [connect to GitHub through SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
 - `npm (>=6.14.15)` 
-- `Node.js (>=14.17.6)` 
+- `Node.js (>=17)` 
 - Optional: install npm and Node.js inside a custom environment. 
 
 ---
+
+![development-abstract](development-abstract.png)
 
 ## Getting started on your group website
 
@@ -72,7 +75,6 @@ If steps 1-3 were successful, you now have everything set up for developing your
         ---
         name: "John Doe"
         role: "Employee of the month"
-        imgs: []
         ---
         No description available.
         ```
